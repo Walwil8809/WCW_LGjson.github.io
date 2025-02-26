@@ -1,0 +1,725 @@
+{
+  "uniqueLootTable": [
+    {"name": "a human tooth"
+    ,"description": "where did this come from?"
+    ,"value": "1sp" 
+    ,"ID": 1},
+
+    {"name": "a human jawbone"
+    ,"description":"the flesh of this bone appears to have been stripped away"
+    ,"value": "1sp"
+    ,"ID": 2},
+
+    {"name": "raw meat"
+    ,"description": "a small cut of beef?"
+    ,"value": "2sp"
+    ,"ID": 3},
+
+    {"name": "dead mouse"
+    ,"description": "a small field mouse, apparently suffocated to death"
+    ,"value": "0sp"
+    ,"ID": 4}
+  ],
+
+"monsterLootTable": [
+    {"name": "claw" 
+    ,"description": "a pristine claw.. possibly avian?"
+    ,"value": "1sp"
+    ,"ID": 1},
+
+    {"name":"slime"
+    ,"description": "a globule of jelly-like sputum"
+    ,"value": "1sp"
+    ,"ID": 2},
+
+    {"name":"vial of blood"
+    ,"description": "ingredient: potion of heroism (1/3)"
+    ,"value": "2sp"
+    ,"ID": 3},
+
+    {"name":"clump of hair"
+    ,"description": "a tuft of hair - coarse to the touch"
+    ,"value": "0gp"
+    ,"ID": 4},
+
+    {"name":"bloody tooth"
+    ,"description":"tooth"
+    ,"value": "0gp"
+    ,"ID": 5},
+
+    {"name":"human mandible"
+    ,"description": "cracked teeth, gnaw marks scoring the bone. Someone's seen better days..."
+    ,"value":"0gp"
+    ,"ID": 6},
+
+    {"name":"human femur"
+    ,"description": "must've been painful"
+    ,"value": "1sp"
+    ,"ID": 7},
+
+    {"name":"human rib"
+    ,"description": "cleaned of flesh"
+    ,"value": "(2sp)"
+    ,"ID": 8},
+
+    {"name":"cow hoof"
+    ,"description": "a broken cow hoof"
+    ,"value": "(1sp)"
+    ,"ID": 9},
+
+    {"name":"cow jaw"
+    ,"description": "cleaned of flesh"
+    ,"value": "(1sp)"
+    ,"ID": 10},
+
+    {"name":"cleaned animal bone"
+    ,"description": "seems to be a small, brittle, avian bone'"
+    ,"value": "(1sp)"
+    ,"ID": 11},
+
+    {"name":"bloody cloth"
+    ,"description": "ripped from a nice garb"
+    ,"value": "(1sp)"
+    ,"ID": 12},
+
+    {"name":"ripped adventurer's pack"
+    ,"description": "a leather pack - the bottom panel torn open"
+    ,"value": "(5sp)"
+    ,"ID": 13},
+
+    {"name":"cracked compass"
+    ,"description": "rusted casing with broken glass and a missing needle"
+    ,"value": "(4sp)"
+    ,"ID": 14},
+
+    {"name":"broken iron sword"
+    ,"description": "a wooden hilt with a small, jagged iron tooth protruding"
+    ,"value": "(3sp)"
+    ,"ID": 15},
+
+    {"name":"small rodent carcass"
+    ,"description":"OH SHIT! A rat!"
+    ,"value":"(2sp)"
+    ,"ID": 16},
+
+    {"name":"small rodent leg"
+    ,"description": "perhaps a rat?"
+    ,"value": "(1sp)"
+    ,"ID": 17},
+
+    {"name":"silky tail"
+    ,"description": "ingredient: potion of Speed (1/2)"
+    ,"value": "(1gp)"
+    ,"ID": 18},
+
+    {"name":"silky ear"
+    ,"description": "ingredient: potion of Speed (1/2)"
+    ,"value": "(1gp)"
+    ,"ID": 19},
+
+    {"name":"silky fur"
+    ,"description": "ingredient: potion of Speed (1/2)"
+    ,"value": "(1gp)"
+    ,"ID": 20},
+
+    {"name":"silky paw"
+    ,"description": "ingredient: potion of Speed (1/2)"
+    ,"value": "(1gp)"
+    ,"ID": 21},
+
+    {"name":"monster heart"
+    ,"description": "ingredient: potion of Storm Giant Strength (1/4)"
+    ,"value": "(2gp)"
+    ,"ID": 22},
+
+    {"name":"monster eyeball"
+    ,"description": "ingredient: potion of Stone Giant Strength (1/3)"
+    ,"value": "(1sp)"
+    ,"ID": 23},
+
+    {"name":"monster jaw"
+    ,"description": "ingredient: potion of Stone Giant Strength (1/3)"
+    ,"value": "(1sp)"
+    ,"ID": 24},
+
+    {"name":"monster tooth"
+    ,"description": "ingredient: potion of Stone Giant Strength (2/3)"
+    ,"value": "(1sp)"
+    ,"ID": 25},
+    
+    {"name":"monster fur"
+    ,"description": "ingredient: potion of Stone Giant Strength (1/3)"
+    ,"value": "(2gp)"
+    ,"ID": 26},
+
+    {"name":"thick fur"
+    ,"description": "ingredient: potion of Resistance (1/3)"
+    ,"value": "(3sp)"
+    ,"ID": 27},
+
+    {"name":"thick drool"
+    ,"description": "ingredient: potion of Resistance (1/3)"
+    ,"value": "(3sp)"
+    ,"ID": 28},
+
+    {"name":"thick slime"
+    ,"description": "ingredient: potion of Resistance (1/3)"
+    ,"value": "(3sp)"
+    ,"ID":29},
+
+    {"name":"thick tears"
+    ,"description": "ingredient: potion of Resistance (2/3)"
+    ,"value": "(3sp)"
+    ,"ID": 30},
+
+    ["tentacle", "\x1B[3m'ingredient: potion of Mind Reading (1/3)'", "(3sp)"],
+    ["pink brain", "\x1B[3m'ingredient: potion of Mind Reading (2/3)'", "(3sp)"],
+    ["grey brain", "\x1B[3m'ingredient: potion of Mind Reading (1/3)'", "(3sp)"],
+    ["large vial of blood", "\x1B[3m'ingredient: potion of heroism (2/3)'", "(1sp)"],
+    ["vial of black blood", "\x1B[3m'ingredient: potion of Invisibility (1/4)'", "(1sp)"],
+    ["white hair", "\x1B[3m'ingredient: potion of Invisibility (1/4)'", "(1sp)"],
+}
+animal_loot = [
+    [random.choice(artifacts[5])+"raw meat", "\x1B[3m'raw.. perhaps a butcher can cure it'", "(5sp)"],
+    ["a small "+random.choice(artifacts[6])+" pelt", "\x1B[3m'seems to have been crudely cut from the beast'", "(4sp)"],
+    ["a midsize "+random.choice(artifacts[6])+" pelt", "\x1B[3m'seems to have been neatly cut from the beast'", "(1gp)"],
+    ["a large "+random.choice(artifacts[6])+" pelt", "\x1B[3m'seems to have been expertly cut from the beast'", "(3gp)"],
+    ["a small, flat tooth","\x1B[3m'ingredient: potion of Climbing (1/2)'", "(1sp)"],
+    ["bloody meat", "\x1B[3m'useless torn-up flesh. more suitable for the garbage than the table'", "(0sp)"],
+    ["bone","\x1B[3m'looks like a femur. gnawed on a bit'", "(1sp)"],
+    ["claw","'"+str(random.randint(2,4))+" inches long and sharp. yellowed from sun damage and age'","(2sp)"],
+    ["scrap of hide","\x1B[3m'a sharp fur triangle - carved off the creature's hide crudely", "(0sp)"],
+    ["leather scrap","\x1B[3m'ripped piece of leather. possibly once a pair of "+random.choice(artifacts[7]), "(3sp)"],
+    ["animal eyeball","\x1B[3m'ingredient: potion of Animal Friendship (1/2)'", "(5sp)"],
+    ["liver ether","\x1B[3m'ingredient: potion of Animal Friendship (1/2)'", "(5sp)"],
+    ["gallbladder juice","\x1B[3m'ingredient: potion of Animal Friendship (1/2)'", "(5sp)"],
+    ["essence of fear","\x1B[3m'ingredient: potion of Animal Friendship (1/2)'", "(5sp)"],
+    ["animal heart","\x1B[3m'ingredient: potion of Supreme Healing (1/4)'", "(2gp)"],
+    ["heat-shielding eyelid","\x1B[3m'ingredient: potion of Fire Giant Strength (1/3)'", "(2gp)"],
+    ["fleas", "\x1B[3m'ingredient: potion of heroism (1/3)'", "(0sp)"],
+    ["white hair", "\x1B[3m'ingredient: potion of Invisibility (1/4)'", "(1sp)"],
+    ["thick fur", "\x1B[3m'ingredient: potion of Resistance (1/3)'", "(3sp)"],
+    ["thick drool", "\x1B[3m'ingredient: potion of Resistance (1/3)'", "(3sp)"],
+    ["thick slime", "\x1B[3m'ingredient: potion of Resistance (1/3)'", "(3sp)"],
+    ["thick tears", "\x1B[3m'ingredient: potion of Resistance (2/3)'", "(3sp)"],
+    ["silky tail", "\x1B[3m'ingredient: potion of Speed (1/2)'", "(1gp)"],
+    ["silky ear", "\x1B[3m'ingredient: potion of Speed (1/2)'", "(1gp)"],
+    ["silky fur", "\x1B[3m'ingredient: potion of Speed (1/2)'", "(1gp)"],
+    ["silky paw", "\x1B[3m'ingredient: potion of Speed (1/2)'", "(1gp)"],
+    ["vial of blood", "\x1B[3m'ingredient: potion of heroism (1/3)'", "(1sp)"],
+]
+human_food_loot = [
+    ["stale sweetroll","\x1B[3m'don't let anyone steal it'", "(3sp)"],
+    ["tin of humble pie","\x1B[3m'a nutty crust filled with tripe and cow heel'", "(3sp)"],
+    ["jar of acorn soup","\x1B[3m'making due'", "(1sp)"],
+    ["bowl of rice and peas","\x1B[3m'wild rice mixed with Eberronian peas'", "(4sp)"],
+    ["bowl of green chili stew","\x1B[3m'XX'", "(XXsp)"],
+    ["parcel of grilled snake","\x1B[3m'notes of macademia'", "(3sp)"],
+    ["grilled frogs","\x1B[3m'2 skewers'", "(1sp)"],
+    ["jar of onion soup","\x1B[3m'fresh Khorvaire onions with wild carrots'", "(3sp)"],
+    ["lizard gruel","\x1B[3m'served on nutbread, packaged in a small tin'", "(1sp)"],
+    ["crisped worm skewers with potatoes","\x1B[3m'self explanatory'", "(2sp)"],
+    ["covered bowl of porridge","\x1B[3m'not too hot and not too cold'", "(1sp)"],
+    ["jar of mushroom stew","\x1B[3m'Eberron mushrooms warm the soul'", "(2sp)"],
+    ["leg of mutton and goose eggs","\x1B[3m'eggs over easy, mutton under lamb'", "(2sp)"],
+    ["beef stew and sourdough","\x1B[3m'a can of stew tied w/ twine to a parcel of bread'", "(8sp)"],
+    ["jar of squash and fish soup","\x1B[3m'red sea trout with yellow garden squash'", "(3sp)"],
+    ["tin of mutton meatloaf","\x1B[3m'unidentified meat in a loaf shape'", "(3sp)"],
+    ["packaged rabbit and baked cabbage","\x1B[3m'leg of rabbit and head of cabbage'", "(2sp)"],
+    ["basket of bread-bowl stew","\x1B[3m'stew but, you know, in a bread bowl'", "(8sp)"],
+    ["jar of hot beet soup","\x1B[3m'spicy beets - its actually best served room temp'", "(2sp)"],
+    ["bog-beetle dumplings","\x1B[3m'beetles from the bogs of greywood'", "(2sp)"],
+    ["wayfarers cake","\x1B[3m'baked with roadside wheat, lost cows milk and brown sugar'", "(3sp)"],
+    ["cooked wolf steak","\x1B[3m'pan-seared wolf chop. made in a hurry'", "(3sp)"],
+    ["wren and cattail pot pie","\x1B[3m'cattail the plant. wren the bird?'", "(7sp)"],
+    ["thistle salad with roasted grubs","\x1B[3m'made in a hurry with available means'", "(4sp)"],
+    ["barbecued gopher legs","\x1B[3m'2 skewers'", "(3sp)"],
+    ["grilled wild boar chops","\x1B[3m'3 chops and quite tough to chew'", "(2sp)"],
+    ["broiled salmon and potatoes","\x1B[3m'wild Sharnian salmon with russet potatoes'", "(4sp)"],
+    ["roast chicken and potatoes","\x1B[3m'grass fed Sharn chicken with russet potatoes'", "(5sp)"],
+    ["plate of smoked sausage","\x1B[3m'cooked with goose eggs and dates'", "(3sp)"],
+    ["cheese pie and onion soup","\x1B[3m'a can of soup tied w/ twine to a parcel of pie'", "(3sp)"],
+    ["bakers paper of baked boar and greens","\x1B[3m'field asparagus and Reven wild boar'", "(3sp)"],
+    ["jar of minted pea soup","\x1B[3m'a medieval recipe for a medieval palate'", "(2sp)"],
+    ["parchment of baked goat flank","\x1B[3m'rosemary, thyme, and a little crushed pepper'", "(5sp)"],
+    ["bottle of rabbit stew with willow crackers","\x1B[3m'fresh rabbit with a sleeve of hearty crackers'", "(3sp)"],
+    ["can of lemming and berry soup","\x1B[3m'sweet with a hint of acidity'", "(2sp)"],
+    ["package of honey braised boar ribs","\x1B[3m'a delicacy among the Sharn gentry'", "(1gp)"],
+    ["Venison and bean stew","\x1B[3m'crudely wrapped venison and a skin of bean stew'", "(1sp)"],
+    ["Buffaloaf and honeyed corn","\x1B[3m'loaf of buffalo, certainly'", "(3sp)"],
+    ["Rack of lamb platter","\x1B[3m'served with mint and carrots'", "(5sp)"],
+    ["Pork chop & curds","\x1B[3m'flame grilled chops with cheddar curds'", "(3sp)"],
+    ["Elven bread","\x1B[3m'baked with an air of superiority'", "(2gp)"],
+    ["Baked loin of pork with gravy","\x1B[3m'just like mother used to make'", "(4sp)"],
+]
+nature_loot = [
+    ["tangle of roots","\x1B[3m'mundane. good for chewing, though'", "(1sp)"],
+    ["bunch of leaves","\x1B[3m'notes of maple'", "(1sp)"],
+    ["Cress","\x1B[3m'ingredient: minor health potion (1/2)'", "(1sp)"],
+    ["Leek","\x1B[3m'a small sprig. fragrant'", "(1sp)"],
+    ["chives","\x1B[3m'a small sprig. fragrant'", "(1sp)"],
+    ["hotwhips, root","\x1B[3m'ingredient: potion of fire breathing (1/2)'", "(1sp)"],
+    ["searshoots, bunch","\x1B[3m'ingredient: potion of fire breathing (1/2)'", "(1sp)"],
+    ["garlic","\x1B[3m'a fragrant clove'", "(1sp)"],
+    ["Parsley","\x1B[3m'bright green with a sweet smell'", "(2sp)"],
+    ["Coushoots","\x1B[3m'ingredient: potion of healing (1/2)'", "(2sp)"],
+    ["Greenspear","\x1B[3m'ingredient: potion of healing (1/2)'", "(2sp)"],
+    ["asparagus","\x1B[3m'two stalks, bound with a ribbon of grass'", "(2sp)"],
+    ["fiddleheads","\x1B[3m'ingredient: potion of Healing (1/2)'", "(2sp)"],
+    ["broadleaves, bunch","\x1B[3m'ingredient: potion of Greater Healing (1/2)'", "(2sp)"],
+    ["Brownbuds, clove","\x1B[3m'ingredient: potion of Greater Healing (1/2)'", "(4sp)"],
+    ["wild forest radishes","\x1B[3m'ingredient: potion of Greater Healing (2/2)'", "(4sp)"],
+    ["blueberries","\x1B[3m'ingredient: potion of healing (2/2)'", "(4sp)"],
+    ["blackberries","\x1B[3m'ingredient: Malice (1/2)'", "(4sp)"],
+    ["elven berries","\x1B[3m'ingredient: Malice (1/2)'", "(4sp)"],
+    ["nightshade","\x1B[3m'ingredient: Malice (1/2)'", "(4sp)"],
+    ["devil's bud","\x1B[3m'ingredient: Wyvern Poison (1/2)'", "(4sp)"],
+    ["Rhubarb","\x1B[3m'sweet and tasty'", "(4sp)"],
+    ["Roseapple","\x1B[3m'ingredient: potion of Superior Healing (1/3)'", "(4sp)"],
+    ["Aelfengrape Fruit","\x1B[3m'ingredient: potion of Superior Healing (1/3)'", "(4sp)"],
+    ["Lavender Seeds","\x1B[3m'ingredient: potion of Superior Healing (1/3)'", "(4sp)"],
+    ["Kelp Bulb","\x1B[3m'ingredient: potion of Superior Healing (1/3)'", "(4sp)"],
+    ["Mammoth Pitcher Plant","\x1B[3m'ingredient: potion of Supreme Healing (1/4)'", "(4sp)"],
+    ["Blue Lamica","\x1B[3m'ingredient: potion of Supreme Healing (1/4)'", "(4sp)"],
+    ["Cactus Petal","\x1B[3m'ingredient: potion of Hill Giant Strength (1/2)'", "(4sp)"],
+    ["Thorned Embers","\x1B[3m'ingredient: potion of Hill Giant Strength (1/2)'", "(4sp)"],
+    ["Blue Frost Fruit","\x1B[3m'ingredient: potion of Fire Giant Strength (1/3)'", "(4sp)"],
+    ["Ruby Hibiscus","\x1B[3m'ingredient: potion of Fire Giant Strength (1/3)'", "(4sp)"],
+    ["Speckled Red Shroom","\x1B[3m'ingredient: potion of Superior Healing (1/3)'", "(4sp)"],
+    ["Vitalin Seeds","\x1B[3m'ingredient: potion of Superior Healing (2/3)", "(1gp)"],
+    ["Lunarbladed Grass","\x1B[3m'ingredient: potion of Superior Healing (2/3)", "(1gp)"],
+    ["Reckless Snap-Petals","\x1B[3m'ingredient: potion of Superior Healing (3/3)'", "(1gp)"],
+    ["Dew-Doused Daisies","\x1B[3m'ingredient: potion of Supreme Healing (2/3)'", "(1gp)"],
+    ["Speckled White Shrooms","\x1B[3m'ingredient: potion of Superior Healing (2/3)'", "(1gp)"],
+    ["Blue Flourescent Grub-Slug","\x1B[3m'ingredient: potion of growth (1/3)'", "(1sp)"],
+    ["Pink Flourescent Grub-Slug","\x1B[3m'ingredient: potion of growth (1/3)'", "(1sp)"],
+    ["Green Flourescent Grub-Slug","\x1B[3m'ingredient: potion of growth (1/3)'", "(1sp)"],
+    ["cattail","\x1B[3m'ingredient: potion of Animal Friendship (1/2)'", "(5sp)"],
+    ["puppy-ear lily","\x1B[3m'ingredient: potion of Animal Friendship (1/2)'", "(5sp)"],
+
+]
+potion_loot = [
+    ["potion of Hill Giant Strength", "\x1B[3m'(consumed, 1h) set your strength to 21 for'" ,"(2gp)"],
+    ["potion of Stone Giant Strength", "\x1B[3m'(consumed, 1h) set your strength to 23'" ,"(2gp)"],
+    ["potion of Fire Giant Strength", "\x1B[3m'(consumed, 1h) set your strength to 25'" ,"(2gp)"],
+    ["potion of Cloud Giant Strength", "\x1B[3m'(consumed, 1h) set your strength to 27'" ,"(2gp)"],
+    ["potion of Storm Giant Strength", "\x1B[3m'(consumed, 1h) set your strength to 29'" ,"(2gp)"],
+    ["potion of Climbing","\x1B[3m'(consumed, until long rest) gain climbing speed equal to your walking speedand advantage on Athletics checks you make to climb'", "(5sp)"],
+    ["potion of Animal Friendship","\x1B[3m'(consumed, until long rest) you can cast the spell animal friendship at will'", "(6sp)"],
+    ["oil of Slipperiness", "\x1B[3m'(poured over creature (10m), 3h) creature gains advantage on grapples and the effect of a freedom of movement spell.'", "(2sp)"],
+    ["potion of Fire Breathing", "\x1B[3m'(consumed, 1h) your mouth emits the spell fire bolt as a bonus action or whenever you speak'", "(3gp)"],
+    ["potion of Frost","\x1B[3m'(consumed, 1h) everything touched is affected by the spell frostbite. consumes a bonus action'", "(3gp)"],
+    ["potion of Heroism","\x1B[3m'(consumed, 1h) gain 10 temporary hitpoints'", "(2gp)"],
+    ["potion of Speed","\x1B[3m'(consumed, 1h) gain the effects of the haste spell'", "(1gp)"],
+    ["oil of Sharpness","\x1B[3m'(dipped, 1h) object gains +2 attack and damage rolls'", "(1gp)"],
+    ["oil of Killing","\x1B[3m'(dipped, 1h) object gains +3 attack and damage rolls'", "(1gp)"],
+    ["oil of Bleeding","\x1B[3m'(dipped, 1h) object gains +1 attack and damage rolls and causes targets to bleed for 1d4 every turn for 1d4 turns'", "(1gp)"],
+    ["potion of Resistance to "+random.choice(artifacts[8]), "\x1B[3m'(consumed, 1 hour) grants resistance to the specified element for 1 hour.'" ,"(2gp)"],
+    ["potion of Mind Reading","\x1B[3m'(consumed, 1h) you gain the effect of the detect thoughts spell'","(1gp)"],
+    ["Malice", "\x1B[3m'(dipped/thrown, 1h) target must succeed on a DC 15 Con saving throw or become poisoned for 1 hour, taking 2d4 damage per turn'", "(1gp)"],
+    ["Drow Poison", "\x1B[3m'(dipped, 1h) object applies 1d6 poison damage on hit'", "(1gp)"],
+    ["poison of Assassin's Blood", "\x1B[3m'(dipped, 1h) object applies 1d8 poison damage on hit'", ""],
+    ["potion of Invisibility", "\x1B[3m'(consumed, 1h) you become invisible'", "(1gp)"],
+    ["potion of Growth", "\x1B[3m'(consumed, 1h) gain the “enlarge” effect of the enlarge/reduce spell'", ""],
+    ["potion of Dimunition", "\x1B[3m'(consumed, 1h) gain the “reduce” effect of the enlarge/reduce spell'", ""],
+    ["potion of Healing", "\x1B[3m'(consumed)'", "restore 2d4+2 health"],
+    ["potion of Greater Healing", "\x1B[3m'(consumed)'", "restore 4d4+4 health"],
+    ]
+ammunition_loot = [
+    ["Gunpowder, Horn", "'{3d6 bludgeoning} |\x1B[3m a large sack of gunpowder.. \x1B[0m| {heavy, reach}'", "(2gp)"],
+    [str(random.randint(4,20))+" Blowgun Needles","'{1 piercing} |\x1B[3m 5% chance to apply 1d4 bleeding damage for 1d4 turns \x1B[0m| {ammunition}'", "(1sp)"],
+    [str(random.randint(4,20))+" Crossbow Bolts","'{1d6 piercing} |\x1B[3m deals an additional 1d4 damage if shot by a crossbow \x1B[0m| {ammunition}'", "(1sp)"],
+    [str(random.randint(4,20))+" Sling Bullets","'{2 bludgeoning} |\x1B[3m 5% chance to apply stunned for 1d2 turns \x1B[0m| {ammunition}'", "(1gp)"],
+    [str(random.randint(2,4))+" Silvered Arrows","'{1d8 piercing} |\x1B[3m seems to be more effective against a certain type of creature... \x1B[0m| {ammunition}'", "(10gp)"],
+    [str(random.randint(2,10))+" Hammerheads arrows","'{1d6 bludgeoning} |\x1B[3m on critical hit, apply stunned to your target until the start of your next turn \x1B[0m| {ammunition}'", "(1gp)"],
+    [str(random.randint(2,10))+" broadhead arrows","'{1d6 piercing} |\x1B[3m on critical hit, your target bleeds for 1d4 for 3 turns or until it can use a bonus action to staunch \x1B[0m| {ammunition}'", "(1gp)"],
+    [str(random.randint(2,10))+" corkscrew arrows","'{1d8 piercing} |\x1B[3m if your target is submerged, deals an additional 1d8 peircing \x1B[0m| {ammunition}'", "(1gp)"],
+    [str(random.randint(2,10))+" Rope arrows","'{1d6 piercing} |\x1B[3m a 20m rope is attached to this arrow but your range is reduced by 10m due to the weight of a large rope \x1B[0m| {ammunition}'", "(1gp)"],
+    [str(random.randint(1,3))+" transport arrows","'{1d6 piercing} |\x1B[3m you may teleport to this arrows location \x1B[0m| {ammunition}'", "(1gp)"],
+    [str(random.randint(1,3))+" splinter arrows","'{1d6 piercing} |\x1B[3m this arrow will deal 1/3rd of its damage to up to two targets in 10m of the original \x1B[0m| {ammunition}'", "(1gp)"],
+]
+dead_loot = [
+    ["skull","\x1B[3m'won't be needing this anymore'","(1sp)"],
+    ["spare rib","\x1B[3m'must've been painful'","(2sp)"],
+    ["decaying cloak","\x1B[3m'useless'","(2sp)"],
+    ["rotten intestine","\x1B[3m'ingredient: poison of assassin's blood (1/3)'", "(2sp)"],
+    ["a small, flat tooth","\x1B[3m'ingredient: potion of Climbing (1/2)'", "(1sp)"],
+    ["severed head","\x1B[3m'won't be needing this anymore'", "(0sp)"],
+    ["severed tail","\x1B[3m'wasn't fast enough..'", "(2sp)"],
+    ["severed hand","\x1B[3m'ingredient: poison of assassin's blood (1/3)'","(2sp)"],
+    ["loose eyeball","\x1B[3m'ingredient: poison of assassin's blood (1/3)'","(2sp)"],
+    [str(random.randint(1,3))+" dead rats","\x1B[3m'wasn't fast enough..'", "(2sp)"],
+    [str(random.randint(1,3))+" live rats","\x1B[3m'why'd it have to be rats?'", "(7sp)"],
+    ["human mandible", random.choice(artifacts[4]), "(1sp)"],
+    ["human femur", "\x1B[3m'must've been painful'", "(1sp)"],
+    ["human rib", "\x1B[3m'cleaned of flesh'", "(2sp)"],
+]
+
+#Trash Loot
+trash_weapon = [
+    ["broken iron dagger", "\x1B[3m'useless'","(0sp)"],
+    ["empty leather scabbard", "\x1B[3m'marred with deep cuts'","(0sp)"],
+    ["rusted sword, engraved wooden handle", "\x1B[3m'the engraving seems to be "+random.choice(artifacts[9])+"'","(0sp)"],
+    ["stringless bow", "\x1B[3m'sporting cracked string nocks'","(0sp)"],
+    ["blackened stick, cloth-wrapped end with oily residue", "\x1B[3m'an impromptu torch?'","(0sp)"],
+    ["Rock, bound with thinning twine and a braided tassle", "\x1B[3m'useless'","(0sp)"],
+    ["wooden spear, blade end snapped off", "\x1B[3m'useless'","(0sp)"],
+    ["counterfeit gnome tortoise blade", "\x1B[3m'is this...wood and tin?'","(0sp)"],
+    ["counterfeit eagle's claw", "\x1B[3m'is this... a painted wooden blade?'","(0sp)"],
+    ["nunchaku, missing middle chain", "\x1B[3m'two sticks, morelike'","(0sp)"],
+]
+trash_armor = [
+    ["Heavily Dented Helmet", "\x1B[3m'useless'", "(0sp)"],
+    ["Slashed Leather Chestpiece", "\x1B[3m'useless'", "(0sp)"],
+    ["Padded boot with no sole", "\x1B[3m'useless'", "(0sp)"],
+    ["Half of an wooden buckler", "\x1B[3m'useless'", "(0sp)"],
+    ["Scrap of Leather Chestpiece", "\x1B[3m'useless'", "(0sp)"],
+    ["Strapless Shield", "\x1B[3m'useless'", "(0sp)"],
+    ["Shard of iron", "\x1B[3m'useless'", "(0sp)"],
+]
+trash_treasure = [
+    ["Scrap of animal hide", "\x1B[3m'useless'","(0sp)"],
+    ["Piece of rotten fruit", "\x1B[3m'ingredient: potion of Climbing (1/2)'","(0sp)"],
+    ["Dried animal jerky", "\x1B[3m'useless'","(0sp)"],
+    ["defaced silver coins", "\x1B[3m'useless'","(0sp)"],
+    ["scrap of pelt", "\x1B[3m'useless'","(0sp)"],
+    ["crumpled paper", "\x1B[3m'useless'","(0sp)"],
+    ["empty envelope", "\x1B[3m'useless'","(0sp)"],
+    ["tin can", "\x1B[3m'useless'","(0sp)"],
+    ["cobwebs", "\x1B[3m'useless'","(0sp)"],
+    ["shard of wood", "\x1B[3m'useless'","(0sp)"],
+    ["broken mirror", "\x1B[3m'useless'","(0sp)"],
+    ["ripper portrait of a man", "\x1B[3m'the face seems to be clawed apart'","(0sp)"],
+    ["ruined portrait of a man", "\x1B[3m'dark liquid spilled across face'","(0sp)"],
+    ["wood cup", "\x1B[3m'useless'","(0sp)"],
+    ["tin tankard", "\x1B[3m'useless'","(0sp)"],
+    ["empty tin canteen", "\x1B[3m'there's a hole in the bottom'","(0sp)"],
+    ["ball of yarn", "\x1B[3m'useless'","(0sp)"],
+    ["leather scrap", "\x1B[3m'useless'","(0sp)"],
+    ["chunk of iron chainmail", "\x1B[3m'useless'","(0sp)"],
+    ["iron chain", "\x1B[3m'useless'","(0sp)"],
+    ["square of fabric", "\x1B[3m'useless'","(0sp)"],
+]
+trash_regional = [
+    "Khorvaire Firepepper",
+    "Ghoul's Rose",
+    "Bloodvine",
+    "Dried plaguebrush branch",
+    "bladetooth canine",
+    "valenar leather",
+    "giant's toe",
+    "halfling hair tuft",
+    "dried bloodfire ooze",
+    "counterfeit dragon's scale (giant iguana?)",
+    "troll fat",
+    "glidewing feather",
+    "cracked hammertail scale",
+    "1 piece of carnathi paper",
+    "2 pieces of carnathi paper",
+    "3 pieces of carnathi paper",
+    "4 pieces of carnathi paper",
+]
+
+#Common Loot:
+common_weapon = [
+    ["battle-marked iron club", "'{1d4 bludgeoning} | \x1B[3mthis has seen some days.. \x1B[0m| {light}'", "(3sp)"],
+    ["clean iron dagger", "'{1d4 piercing} | \x1B[3mclean..untested \x1B[0m| {finesse, light, thrown}'", "(3sp)"],
+    ["dented iron greatclub", "'{1d8-1 bludgeoning} | \x1B[3mseems to sport the effects of a solid hit roll \x1B[0m| {two-handed}'", "(3sp)"],
+    ["thin iron handaxe", "'{1d6-1 slashing} | \x1B[3mit seems flimsy.. a single hit could bend this warbly blade \x1B[0m| {light, thrown}'", "(3sp)"],
+    ["two-handed steel-tipped javelin", "'{1d6+1 piercing} | \x1B[3ma sturdy glinting tip adorns the oak staff \x1B[0m| {two-handed, thrown}'", "(3sp)"],
+    ["light steel hammer", "'{1d4 bludgeoning} | \x1B[3mmissing a chisel \x1B[0m| {light, thrown}'", "(3sp)"],
+    ["small mace", "'{1d6-1 bludgeoning} | \x1B[3mthe weight seems low..as if the steel wasn't tempered well \x1B[0m| {--}'", "(3sp)"],
+    ["iron-tipped quarterstaff", "'{1d6+1 bludgeoning} | \x1B[3mthe solid iron cap on the staff would undoubtedly leave a mark \x1B[0m| {versatile}'", "(3sp)"],
+    ["blood-caked sickle", "'{1d4 slashing} | \x1B[3msomeone put this to use \x1B[0m| {light}'", "(3sp)"],
+    ["bone-tooth spear", "'{1d6 piercing} | \x1B[3m+1 to hit and damage rolls against unarmored creatures \x1B[0m| {versatile, thrown}'", "(3sp)"],
+    ["bone-carved dart", "'{1d4 piercing} | \x1B[3m+2 to hit and +1 to damage rolls against unarmored creatures \x1B[0m| {finesse, thrown}'", "(3sp)"],
+    ["soft bearskin sling", "'{1d4 bludgeoning} | \x1B[3mcan load impromptu rocks without using ammo \x1B[0m| {ammunition}'", "(3sp)"],
+    ["drow long knife", "'{1d6 piercing} | \x1B[3m+1 to attack and hit rolls against magical creatures \x1B[0m| {finesse, light}'", "(3sp)"],
+    ["eagle's claw blade", "'{1d4 slashing and piercing} | \x1B[3m+1 damage when two or more enemies are within 10ft of the user \x1B[0m| {finesse}'", "(3sp)"],
+    ["gnome tortoise blade", "'{1d6 piercing} | \x1B[3mwhen weilded by a small creature, deals 1d8 piercing instead \x1B[0m| {light}'", "(3sp)"],
+    ["kama", "'{1d6 slashing} | \x1B[3ma very basic sickle \x1B[0m| {versatile}'", "(3sp)"],
+    ["dire pick", "'{1d8 piercing} | \x1B[3m+1 to hit and attacks rolls made against targets made of rock or mineral-like materials \x1B[0m| {light}'", "(3sp)"],
+]
+common_armor = [
+ #cloth
+    #fine
+    ["fine sunning hat", "'{req: N/A} |\x1B[3m while magelight affects an entity near you, your spell save DC has +1 \x1B[0m| {cloth hat}'", "(5sp)"],
+    ["fine fur shirt", "'{req: N/A} |\x1B[3m spells you cast that deal frost damage have an additional 1d4 damage \x1B[0m| {cloth shirt}'", "(1gp)"],
+    ["fine cooking gloves", "'{req: N/A} |\x1B[3m +1 damage to cantrips that deal fire damage \x1B[0m| {cloth gloves}'", "(3sp)"],
+    ["fine silken pants", "'{req: N/A} |\x1B[3m if you have no armor and less than 16 AC, you have +1 AC \x1B[0m| {cloth pants}'", "(3sp)"],
+    ["fine shoes", "'{req: N/A} |\x1B[3m after casting a cantrip, your move speed increases by 10m/s \x1B[0m| {cloth shoes}'", "(3sp)"],
+    ["fine flowing shawl", "'{req: N/A} |\x1B[3m after using a spell slot on a spell which generates water, you may cast a level one spell as a bonus action (still consumes a lvl 1 spell slot) \x1B[0m| {cloth cape}'", "(3sp)"],
+    #dark
+    ["dark hood", "'{req: N/A} |\x1B[3m while you are undetected, you have +1 to hit and deal an additional +1 piercing damage \x1B[0m| {cloth hat}'", "(3sp)"],
+    ["dark robe", "'{req: N/A} |\x1B[3m you gain a +1 to stealth, persuasion, and deception rolls \x1B[0m| {cloth shirt}'", "(1gp)"],
+    ["dark deft-fingered gloves", "'{req: N/A} |\x1B[3m you gain a +1 to lockpicking and pickpocket rolls. Once per long rest, you can pick a lock without consuming a lockpicking kit \x1B[0m| {cloth gloves}'", "(2sp)"],
+    ["dark pants of the apologist", "'{req: N/A} |\x1B[3m for 10m after being caught pickpocketing, you gain advantage on your deception rolls \x1B[0m| {cloth pants}'", "(7sp)"],
+    ["dark shoes of tiptoeing", "'{req: N/A} |\x1B[3m after succeeding a stealth check, your movement speed is increased by 10m \x1B[0m| {cloth shoes}'", "(3sp)"],
+    ["dark cloak", "'{req: N/A} |\x1B[3m made especially for swooping dramatically \x1B[0m| {cloth cape}'", "(5sp)"],
+ #light
+    #leather
+    ["leather helmet of the chooser", "'{req: N/A} |\x1B[3m attacks made at greater than 30m have +1 to hit. attacks made at less than 10m have +1 to damage \x1B[0m| {light helmet}'", "(1gp)"],
+    ["leather armor", "'{req: 9 dex} |\x1B[3m AC is 11+dex modifier \x1B[0m| {light armor}'", "(10gp)"],
+    ["scarred leather bracer", "'{req: 9 dex} |\x1B[3m piercing damage attacks against you have disadvantage but bludgeoning damage attacks against you have advantage \x1B[0m| {light gloves}'", "(2gp)"],
+    ["leather pants, byeshk buckle", "'{req: 9 dex} |\x1B[3m +1 to dexterity but -1 to hit rolls made with ranged weapons \x1B[0m| {light pants}'", "(7gp)"],
+    ["leather boots of biding",  "'{req: N/A} |\x1B[3m after ending your turn without moving, your next turn has +10m of movement speed \x1B[0m| {light boots}'", "(2gp)"],
+    ["leather cape of the opportunist", "'{req: 11 dex} |\x1B[3m your ranged weapons have +1 damage. your first attack per combat with a one-handed melee weapon has +2 damage \x1B[0m| {cape}'", "(1gp)"],
+    #padded
+    ["padded helmet of chiding", "'{req: 10 dex} |\x1B[3m while unarmed, you have +2 to your deception, persuasion, and performance rolls \x1B[0m| {light helmet}'", "(1gp)"],
+    ["padded undershirt of confusion", "'{req: 10 dex} |\x1B[3m this does not count as armor. your AC is 11 + your dex modifier \x1B[0m| {light armor}'", "(5gp)"],
+    ["padded gloves", "'{req: 9 dex} |\x1B[3m riposte: after a successful hit with a two-handed weapon, the next attack against you has -1 to hit \x1B[0m| {light gloves}'", "(2gp)"],
+    ["bully's padded pants", "'{req: 11 str} |\x1B[3m after knocking a target prone, you may expend a bonus action to attack the target (without rolling to hit) for 1/2 the rolled damage \x1B[0m| {light pants}'", "(8sp)"],
+    ["Happy Foot's padded shoes", "'{req: N/A} |\x1B[3m in combat, after moving at least 10m on a turn, your AC is increased by 1 until your next turn \x1B[0m| {light boots}'", "(1gp)"],
+    ["padded cape", "'{req: 12 dex} |\x1B[3m you have +1 to all strength rolls \x1B[0m| {cape}'", "(9sp)"],
+#medium
+    #hide
+    ["hide cap of sparring",  "'{req: 11 dex} |\x1B[3m after making a successful hit roll, your AC is increased by 1 until a successful hit against you. does not stack \x1B[0m| {medium helmet}'", "(3gp)"],
+    ["hide tunic",  "'{req: 11 dex} |\x1B[3m AC is 15+dex modifier \x1B[0m| {medium armor}'", "(10gp)"],
+    ["hide gloves",  "'{req: 12 dex} |\x1B[3m once per combat, your first hit with a two-handed weapon deals an additional 1d4 damage \x1B[0m| {medium gloves}'", "(3gp)"],
+    ["hide pants of the duelist",  "'{req: 11 dex} |\x1B[3m once per long rest, you may reduce incoming melee slashing damage by half as a reaction \x1B[0m| {medium pants}'", "(5gp)"],
+    ["hide footwraps",  "'{req: N/A} |\x1B[3m you have +5m of movement speed \x1B[0m| {medium shoes}'", "(3gp)"],
+    ["hide cape", "'{req: N/A} |\x1B[3m after a humanoid misses you with an attack, their hit roll is reduced by 1, up to 2 \x1B[0m| {cape'", "(4gp)"],
+]
+common_jewelry = [
+    ["brass ring", "'{req: N/A} |\x1B[3m seems like a normal ring \x1B[0m| {ring}'", "(2gp)"],
+    ["brass amulet of fire resistance", "'{req: N/A} |\x1B[3m you have resistance to fire damage \x1B[0m| {necklace}'", "(3gp)"],
+    ["brass broach", "\x1B[3m'a small broach in the shape of a leaf'", "(2gp)"],
+    ["copper ring of blood", "'{req: 10 dex} |\x1B[3m +1 damage to slashing attacks \x1B[0m| {ring}'", "(2gp)"],
+    ["copper amulet of the inaccurate", "'{req: 10 str} |\x1B[3m when you miss an attack with a bludgeoning weapon, the target takes 1d2 damage \x1B[0m| {necklace}'", "(2gp)"],
+    ["copper broach", "\x1B[3m'a small broach in the shape of a butterfly'", "(3gp)"],
+]
+common_treasure = [
+    ["portrait of a woman", "\x1B[3m'rare and valuable!'", "(5sp)"],
+    ["perfume-soaked poem on Carnathi paper", "\x1B[3m'seems to be in dwarven-tongue'", "(2sp)"],
+    ["1 scratched gold piece", "\x1B[3m'defacing currency are we?'", "(9sp)"],
+    ["entomology of a reddish beetle, darkwood shadowbox", "\x1B[3m'expertly carved'", "(8sp)"],
+    ["plaguebrush seed packet", "\x1B[3m'rare and valuable!'", "(3gp)"],
+    ["glass vial of inert truth serum", "\x1B[3m'rare and valuable!'", "(5gp)"],
+    ["book of rough translation", "\x1B[3m'draconic to common'", "(1gp)"],
+    ["broken wand, undetermined spell", "\x1B[3m'rare and valuable!'", "(4sp)"],
+    ["roll of maroon silk", "\x1B[3m'rare and valuable!'", "(2gp)"],
+    ["roll of aqua silk", "\x1B[3m'rare and valuable!'", "(2gp)"],
+    ["framed shipping map, undetermined location", "\x1B[3m'what is oosa?'", "(1gp)"],
+    ["jar of preserved honey", "\x1B[3m'must be good on toast'", "(4sp)"],
+    ["preserved arcane ooze", "\x1B[3m'ingredient: Potion of Supreme Healing (1/4)'", "(1gp)"],
+    ["picture of a dragon scale, painted", "\x1B[3m'a picture of it, though'", "(2gp)"],
+    ["brass nugget", "\x1B[3m'rare and valuable!'", "(3sp)"],
+    ["iron ingot", "\x1B[3m'perhaps a blacksmith could shape this..'", "(1gp)"],
+    ["lead ingot", "\x1B[3m'perhaps a blacksmith could shape this...'", "(2gp)"],
+    ["tin ingot", "\x1B[3m'perhaps a blacksmith could shape this..'", "(1gp)"],
+    [str(random.randint(1,2)) + " agni mani, gemstone", "\x1B[3m'rare and valuable!'", "(50gp)"],
+    [str(random.randint(1,2)) + " algae, gemstone", "\x1B[3m'rare and valuable!'", "(50gp)"],
+    [str(random.randint(1,2)) + " augelite, gemstone", "\x1B[3m'rare and valuable!'", "(50gp)"],
+]
+
+#Rare Loot:
+rare_weapon = [
+    ["blackened byeshk crossbow, light", "'{1d8+1 piercing} |\x1B[3m +1d4 necrotic damage \x1B[0m| {ammunition, loading, light}'", "(25gp)"],
+    ["calomel shortbow", "'{1d6+1 piercing} |\x1B[3m +1d3 bludgeoning damage \x1B[0m| {ammunition, two-handed}'", "(25gp)"],
+    ["livewood battleaxe", "'{1d8+1 slashing} |\x1B[3m this weapon seems to bend towards you.. gains an additional +2 to hit \x1B[0m| {two-handed}'", "(12gp)"],
+    ["densewood flail", "'{1d8+1 bludgeoning} |\x1B[3m +1 bludgeoning damage \x1B[0m| {--}'", "(12gp)"],
+    ["soarwood glaive", "'{1d6+1 piercing} |\x1B[3m this weapons impeccable aerodynamics grants you +10m movement speed while wielding it \x1B[0m| {heavy, reach, two-handed}'", "(21gp)"],
+    ["soarwood greataxe", "'{1d12 slashing} |\x1B[3m if you roll 2 or less on a damage roll you can re-roll the die and choose which one to apply \x1B[0m| {heavy, two-handed}'", "(32gp)"],
+    ["soarwood halberd", "'{1d10 slashing} |\x1B[3m if you roll 2 or less on a damage roll you can re-roll the die and choose which one to apply \x1B[0m| {heavy, reach, two-handed}'", "(22gp)"],
+    ["steel lance", "'{1d10+1 piercing} |\x1B[3m deals +5 damage if you are somehow on a horse or other bovine mount \x1B[0m| {reach, special}'", "(11gp)"],
+    ["hardened blue ice longsword", "'{1d8 slashing} |\x1B[3m +1d4 frost damage \x1B[0m| {versatile}'", "(16gp)"],
+    ["aurorum maul", "'{2d6 bludgeoning} |\x1B[3m +1d4 holy damage. against undead, successful hits deal an additional 2d4 \x1B[0m| {Heavy, two-handed }'", "(11gp)"],
+    ["aurorum morningstar", "'{1d8 piercing} |\x1B[3m +1d4 holy damage. when you deal damage to an undead, deal 1d4 additional damage to undead within 5m \x1B[0m| {--}'", "(16gp)"],
+    ["aurorum pike"], "'{1d10 piercing} |\x1B[3m +1d4 holy damage. when hitting undead, roll a d20. rolls over 15 turn the undead for 1d4 turns \x1B[0m| {Heavy, reach, two-handed }'", "(5gp)",
+    ["pandemonic silver rapier", "'{1d10 piercing} |\x1B[3m counts as silver. when swung, emits a scream that requires a DC12 wisdom saving throw. DC15 in high strength winds \x1B[0m| {finesse}", "(26gp)"],
+    ["pandemonic silver scimitar", "'{1d8 slashing} |\x1B[3m counts as silver. when swung, emits a scream that requires a DC12 wisdom saving throw. DC15 in high strength winds \x1B[0m| {finesse, light}", "(26gp)"],
+    ["pandemonic silver shortsword", "'{1d6 piercing} |\x1B[3m counts as silver. when swung, emits a scream that requires a DC12 wisdom saving throw. DC15 in high strength winds \x1B[0m| {finesse, light}", "(11gp)"],
+    ["thinaun trident", "'{1d6+1 piercing} |\x1B[3m +1 necrotic damage. sucks up the soul of slain creatures, preventing them from being raised \x1B[0m| {thrown, versatile}'", "(6gp)"],
+    ["thinaun war pick", "'{1d8+1 piercing} |\x1B[3m +1 necrotic damage. sucks up the soul of slain creatures, preventing them from being raised \x1B[0m| {--}'", "(6gp)"],
+    ["blue ice warhammer", "'{1d8 bludgeoning} |\x1B[3m +1d6 frost damage \x1B[0m| {versatile}'", "(16gp)"],
+    ["darkweave whip", "'{1d4 slashing} |\x1B[3m +1d4 necrotic damage \x1B[0m| {finesse, reach}'", "(3gp)"],
+    ["densewood blowgun", "'{1+2 piercing} |\x1B[3m +1d4 necrotic damage \x1B[0m| {ammunition}'", "(11gp)"],
+    ["serrated darkweave net", "'{1d4 slashing} |\x1B[3m enemies must succeed a DC15 dex saving throw to escape. if they fail, they take an additional 1d4 slashing every turn until the DC is met \x1B[0m| {thrown, special}'", "(2gp)"],
+    [str(random.randint(2, 10)) + " fire arrows", "'{1d6 piercing} |\x1B[3m +1d4 fire damage and ignites flammable materials. \x1B[0m| {ammunition}'", "(1gp)"],
+    [str(random.randint(2, 10)) + " blinding arrows", "'{1d6 bludgeoning} |\x1B[3m this arrow has a small clay head containing a reactive chemical. On hit, the chemical releases a bright flash, blinding the target until the start of your next turn \x1B[0m| {ammunition}'", "(1gp)"],
+    [str(random.randint(2, 10)) + " smoking arrows", "'{1d6 bludgeoning} |\x1B[3m this arrow has a small clay head containing a reactive chemical. On hit, the chemical releases smoke in a 10ft sphere, heavily obscuring vision in that area for 10 rounds \x1B[0m| {ammunition}'", "(1gp)"],
+    [str(random.randint(2, 10)) + " poisoncloud arrows", "'{1d6 bludgeoning} |\x1B[3m this arrow has a small clay head containing a reactive chemical. On hit, the chemical releases pale fog in a 10ft sphere, dealing 1d6 damage to all living things within for 5 rounds. lightly obscures vision \x1B[0m| {ammunition}'", "(1gp)"],
+]
+rare_armor = [
+#cloth
+    # graceful
+    ["cat-eared graceful hat","'{req: N/A} |\x1B[3m You gain Cat's Grace and increase your Dexterity score by 2, to a maximum 20. \x1B[0m| {cloth hat}'","(5sp)"],
+    ["graceful shirt","'{req: N/A} |\x1B[3m 10AC+dex. Whenever the wearer succeeds a Saving Throw against a spell, they regain 1d6hp. \x1B[0m| {cloth shirt}'","(1gp)"],
+    ["graceful gloves of the comedian", "'{req: N/A} |\x1B[3m once per long rest, you may cast the spell Hideous Laughter \x1B[0m| {cloth gloves}'","(3sp)"],
+    ["graceful pants of the curious","'{req: N/A} |\x1B[3m you gain +2 to investigation checks \x1B[0m| {cloth pants}'", "(3sp)"],
+    ["graceful shoes","'{req: N/A} |\x1B[3m if the wearer is standing in a water surface at the start of their turn, they heal 1d4hp \x1B[0m| {cloth shoes}'","(3sp)"],
+    ["reflective graceful shawl","'{req: N/A} |\x1B[3m once per long rest, you may cast the spell Color Spray \x1B[0m| {cloth cape}'","(3sp)"],
+#light
+    #studded leather
+    ["adamant adamantine studded cap", "'{req: dex 11} |\x1B[3m if you've taken no damage from non-magical attacks this fight, you have +2 damage with ranged weapons \x1B[0m| {light helm}'", "(XXsp)"],
+    ["adamantine studded harness", "'{req: dex 12} |\x1B[3m your AC is 12+dex modifier \x1B[0m| {light armor}'", "(XXsp)"],
+    ["librarian's adamantine studded gloves", "'{req: dex 11} |\x1B[3m you gain advantage on history checks \x1B[0m| {light gloves}'", "(XXsp)"],
+    ["adamantine studded chaps", "'{req: dex 11} |\x1B[3m your movement speed when prone is 20m per turn your MS while crouched is 25m per turn \x1B[0m| {light pants}'", "(XXsp)"],
+    ["adamantine studded boots", "'{req: N/A} |\x1B[3m you gain resistance to poison damage \x1B[0m| {boots}'", "(XXsp)"],
+    ["adamantine studded cloak", "'{req: N/A} |\x1B[3m you gain +1 to stealth checks when out of combat and +1 to deception checks \x1B[0m| {cape}'", "(XXsp)"],
+#heavy
+    #chain
+    ["cold-iron chain cap", "'{req: str 13} |\x1B[3m you are resistant to ice damage. when a melee attack against you fails, gain a stack of 'cold snap'(max 2) for 2 rounds(12s) \x1B[0m| {heavy helm}'", "(30gp)"],
+    ["cold-iron chainmail", "'{req: str 13} |\x1B[3m 16AC. your max 'cold snap' stacks increases to 3 \x1B[0m| {heavy chestplate}'", "(75gp)"],
+    ["cold-iron chain cuffs", "'{req: str 13} |\x1B[3m you gain +2 to hit when wielding only a one-handed weapon \x1B[0m| {heavy gloves}'", "(40gp)"],
+    ["cold-iron chainpants", "'{req: str 13} |\x1B[3m +1 to survival rolls. when struck with a non-magical attack, you deal 1d4 frost damage to the attacker and 1 frost damage to enemies within 2m of you, per stack of 'cold snap' \x1B[0m| {heavy pants}'", "(40gp)"],
+    ["cold-iron chain boots", "'{req: str 13} |\x1B[3m you have advantage against acrobatics checks for slippery surfaces. you gain +5m of movement speed per 2 pieces of cold-iron armor you have equipped \x1B[0m| {heavy boots}'", "(15gp)"],
+    ["cold-iron chain gorget", "'{req: str 13} |\x1B[3m while you have 2 or more stacks of 'cold snap', your AC is increased by 1 (max 19) \x1B[0m| {heavy cape}'", "(20gp)"],
+    #scale
+    ["targath scale bracer"],
+    ["targath scale chestpiece"],
+    ["targath scale collar"],
+    ["targath scale helmet"],
+    ["targath scale boots"],
+]
+rare_jewelry = [
+    "Azurite ring",
+    "Azurite amulet",
+    "Azurite broach",
+    "Obsidian ring",
+    "Obsidian amulet",
+    "Obsidian broach",
+    "Tiger Eye ring",
+    "Tiger Eye amulet",
+    "Tiger Eye broach",
+]
+rare_treasure = [
+    "brass ingot",
+    "bronze ingot",
+    "cold iron ingot",
+    "copper ingot",
+    "silver ingot",
+    "steel ingot",
+    "Stargazer's Singed Sweetflower (20gp)",
+    "Twisted Arvid Nut (20gp)",
+    "1 Clear Sap",
+    "Splendor Reeds (5gp)",
+    "Lunarbladed Grass (10gp)",
+    "potion of gaseous form",
+    "wyvern poison",
+    str(random.randint(1,2)) + " dioptase, gem (50gp)",
+    str(random.randint(1,2)) + " Essonite, gem (10gp)",
+    str(random.randint(1,3)) + " Hambergyle, gem (10gp)",
+    "Thief's supplies",
+    "disguise kit",
+]
+
+#Epic Loot:
+epic_weapon = [
+    "bronzewood greatsword",
+    "bronzewood crossbow, hand",
+    "bronzewood crossbow, heavy",
+    "bronzewood longbow",
+    "great scimitar",
+    "great falchion",
+    "double khopesh",
+    "dire flail",
+    "creature's bane poison",
+    str(random.randint(2, 4)) + " magefire arrows",
+    str(random.randint(2, 4)) + " explosive arrows",
+    str(random.randint(2, 4)) + " ice arrows",
+    str(random.randint(2, 4)) + " acid arrows",
+    str(random.randint(2, 4)) + " thunderclap arrows",
+    str(random.randint(2, 4)) + " lightning arrows",
+]
+epic_armor = [
+    "half-plate sentira gloves",
+    "half-plate sentira armor",
+    "half-plate sentira shoulder",
+    "half-plate sentira collar",
+    "half-plate sentira boots",
+    "potion of hill giant strength",
+    "potion of stone giant strength",
+]
+epic_jewelry = [
+    "Zircon ring",
+    "Zircon amulet",
+    "Zircon broach",
+    "Moonstone ring",
+    "Moonstone amulet",
+    "Moonstone broach",
+    "Onyx ring",
+    "Onyx amulet",
+    "Onyx broach",
+    ]
+epic_treasure = [
+    "1 platinum piece",
+    "gold ingot",
+    "electrum ingot",
+    "Revitalizing Locinth Buds (20gp)"
+    "potion of mind reading",
+    "potion of invisibilty",
+    "truth serum",
+    str(random.randint(2, 3)) + " mindpiercer arrows",
+    str(random.randint(2, 3)) + " holy arrows",
+    str(random.randint(2, 3)) + " unholy arrows",
+    str(random.randint(1,3)) + " Hyacinth, gemstone (70gp)",
+    str(random.randint(1,3)) + " Morganite, gemstone (100gp)",
+    str(random.randint(1,3)) + " Rhodolite, gemstone (100gp)",
+    "Alchemist’s supplies",
+    "Brewer’s supplies",
+    "Carpenter’s tools",
+    "thief’s tools",
+    "Cobbler’s tools",
+    "Cook’s utensils",
+    "Disguise kit",
+    "Jeweler’s tools",
+    "Smith’s tools",
+    "Tinker’s tools",
+]
+
+#Legendary Loot:
+legendary_armor = [
+    "Plate Guantlets",
+    "Plate Chestplate",
+    "Plate Shoulderguard",
+    "Plate Gauntlets",
+    "Plate Boots",
+]
+legendary_jewelry = [
+    "Garnet ring",
+    "Garnet amulet",
+    "Garnet broach",
+    "Pearl ring",
+    "Pearl amulet",
+    "Pearl broach",
+    "Amethyst ring",
+    "Amethyst amulet",
+    "Amethyst broach",
+    ]
+legendary_weapons = [
+    "heavy repeating darkwood crossbow",
+    "light repeating darkwood crossbow",
+    "darkwood greatbow",
+    "composite darkwood greatbow",
+    "darkwood and mithril greathammer",
+    "darkwood and mithril greatsword",
+    "heavy densewood battering ram",
+    "darkwood and mithril lajatang",
+    "poison of unending malice",
+]
+legendary_treasure = [
+    "2 platinum pieces",
+    "mithral ingot",
+    "adamantine chunk, .5 lbs",
+    "potion of invulnerability",
+    "Midnight Tears",
+    str(random.randint(0,2)) + " Red Tears, gemstone (1,000gp)",
+    str(random.randint(1,2)) + " Shandon, gemstone (100gp)",
+    str(random.randint(0,1)) + " Topaz, gemstone (100gp)",
+]
+
+#Magic Loot:
+magic_armor = [
+    "magic armor",
+]
+magic_jewelry = [
+    "magic jewelry",
+]
+magic_weapon = [
+    "magic weapon",
+]
+magic_treasure = [
+    "magic treasure"
+]
+
